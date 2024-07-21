@@ -5,7 +5,7 @@
       "title": "Configurar el entorno de desarrollo",
       "date": "2024-07-22",
       "description": "Instalar y configurar herramientas necesarias para el desarrollo del proyecto web.",
-      "completed": true,
+      "completed": false,
       "reference": "REF001"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Diseñar la arquitectura del proyecto",
       "date": "2024-07-25",
       "description": "Definir la estructura y tecnología a utilizar en el proyecto web.",
-      "completed": false,
+      "completed": true,
       "reference": "REF002"
     },
     {
@@ -71,30 +71,6 @@
       "description": "Desplegar el proyecto en un entorno de producción.",
       "completed": false,
       "reference": "REF009"
-    },
-    {
-      "id": "2048",
-      "title": "2",
-      "date": "2222-02-11",
-      "description": "Nueva",
-      "completed": false,
-      "reference": "REF8Q2Q2"
-    },
-    {
-      "id": "aa08",
-      "title": "sadasdsadsad",
-      "date": "2024-07-18",
-      "description": " web.",
-      "completed": false,
-      "reference": "REFZB10A"
-    },
-    {
-      "id": "8a6d",
-      "title": "",
-      "date": "",
-      "description": "",
-      "completed": false,
-      "reference": "REF84W1K"
     }
   ]
 }

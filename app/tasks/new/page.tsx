@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 
 const NewTask = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const [newTask, setNewTask] = useState({
     title: '',
@@ -19,7 +21,7 @@ const NewTask = () => {
   };
 
   const handleSave = async () => {
-    await fetch('http://localhost:3001/tasks', {
+    await fetch('http://localhost:3001/tasks', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,16 +32,16 @@ const NewTask = () => {
   };
 
   const handleCancel = () => {
-    if (window.confirm('¿Estás seguro de que quieres cancelar? Los cambios no se guardarán.')) {
+    if (window.confirm(t('task_detail.confirm_cancel'))) {
       router.push('/');
     }
   };
 
   return (
     <div className="bg-white min-h-screen p-6">
-      <h1 className="text-2xl font-bold mb-4">Añadir Nueva Tarea</h1>
+      <h1 className="text-2xl font-bold mb-4">{t('new_task.add_new_task')}</h1>
       <div className="mb-4">
-        <label className="block text-lg mb-2">Título</label>
+        <label className="block text-lg mb-2">{t('task_detail.title')}</label>
         <input
           type="text"
           name="title"
@@ -49,7 +51,7 @@ const NewTask = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-lg mb-2">Fecha</label>
+        <label className="block text-lg mb-2">{t('task_detail.date')}</label>
         <input
           type="date"
           name="date"
@@ -59,7 +61,7 @@ const NewTask = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-lg mb-2">Descripción</label>
+        <label className="block text-lg mb-2">{t('task_detail.description')}</label>
         <textarea
           name="description"
           value={newTask.description}
@@ -68,7 +70,7 @@ const NewTask = () => {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-lg mb-2">Referencia</label>
+        <label className="block text-lg mb-2">{t('new_task.reference')}</label>
         <input
           type="text"
           name="reference"
@@ -82,13 +84,13 @@ const NewTask = () => {
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
           onClick={handleSave}
         >
-          Guardar
+          {t('task_detail.save')}
         </button>
         <button
           className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700"
           onClick={handleCancel}
         >
-          Cancelar
+          {t('task_detail.cancel')}
         </button>
       </div>
     </div>

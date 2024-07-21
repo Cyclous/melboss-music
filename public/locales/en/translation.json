@@ -1,0 +1,33 @@
+{
+    "task_list": {
+      "title": "Task List",
+      "date": "Date",
+      "add_task": "Add Task",
+      "completed": "Task Completed",
+      "not_completed": "Task Not Completed",
+      "more_info": "More Info",
+      "mark_as_not_completed": "Mark as Not Completed",
+      "mark_as_completed": "Mark as Completed",
+      "delete": "Delete",
+      "confirm_delete": "Are you sure you want to delete?"
+
+    },
+    "task_detail": {
+      "loading": "Loading...",
+      "back": "Back",
+      "edit": "Edit",
+      "title": "Title",
+      "date": "Date",
+      "reference": "Reference",
+      "description": "Description",
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirm_cancel": "Are you sure you want to cancel? Changes will not be saved.",
+      "delete": "Delete"
+    },
+    "new_task": {
+      "add_new_task": "Add New Task",
+      "reference": "Reference"
+    }
+  }
+  

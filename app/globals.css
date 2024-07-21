@@ -38,4 +38,44 @@ body {
   }
 }
 
+/* globals.css or TaskList.module.css */
 
+.btn-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Fixed width for consistency */
+  height: 50px; /* Fixed height for consistency */
+  font-size: 1rem; /* Font size */
+  border-radius: 0.375rem;
+  color: #fff; /* White text color */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-large:hover {
+  opacity: 0.9;
+}
+
+.btn-large:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Styles for delete button */
+.delete-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #f87171; /* Red color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #e11d48; /* Darker red on hover */
+}

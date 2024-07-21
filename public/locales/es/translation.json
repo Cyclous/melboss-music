@@ -1,0 +1,32 @@
+{
+    "task_list": {
+      "title": "Lista de Tareas",
+      "date": "Fecha",
+      "add_task": "Añadir Tarea",
+      "completed": "Tarea Completada",
+      "not_completed": "Tarea No Completada",
+      "more_info": "Más Información",
+      "mark_as_not_completed": "Marcar como No Completada",
+      "mark_as_completed": "Marcar como Completada",
+      "delete": "Eliminar",
+      "confirm_delete": "¿Está seguro de eliminarlo?"
+    },
+    "task_detail": {
+      "loading": "Cargando...",
+      "back": "Volver",
+      "edit": "Editar",
+      "title": "Título",
+      "date": "Fecha",
+      "reference": "Referencia",
+      "description": "Descripción",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "confirm_cancel": "¿Estás seguro de que quieres cancelar? Los cambios no se guardarán.",
+      "delete": "Eliminar"
+    },
+    "new_task": {
+      "add_new_task": "Añadir Nueva Tarea",
+      "reference": "Referencia"
+    }
+  }
+  
