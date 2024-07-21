@@ -1,0 +1,85 @@
+export interface Task {
+  id: number;
+  title: string;
+  date: string;
+  description: string;
+  completed: boolean;
+  reference: string;
+}
+
+const tasks: Task[] = [
+  {
+    id: 1,
+    title: "Configurar el entorno de desarrollo",
+    date: "2024-07-22",
+    description: "Instalar y configurar herramientas necesarias para el desarrollo del proyecto web.",
+    completed: false,
+    reference: "REF001"
+  },
+  {
+    id: 2,
+    title: "Diseñar la arquitectura del proyecto",
+    date: "2024-07-25",
+    description: "Definir la estructura y tecnología a utilizar en el proyecto web.",
+    completed: false,
+    reference: "REF002"
+  },
+  {
+    id: 3,
+    title: "Crear prototipos de UI",
+    date: "2024-08-01",
+    description: "Diseñar prototipos de la interfaz de usuario para el proyecto web.",
+    completed: false,
+    reference: "REF003"
+  },
+  {
+    id: 4,
+    title: "Implementar la API",
+    date: "2024-08-10",
+    description: "Desarrollar la API necesaria para la funcionalidad del proyecto.",
+    completed: false,
+    reference: "REF004"
+  },
+  {
+    id: 5,
+    title: "Desarrollar el frontend",
+    date: "2024-08-15",
+    description: "Crear el frontend del proyecto web utilizando React y Next.js.",
+    completed: false,
+    reference: "REF005"
+  },
+  {
+    id: 6,
+    title: "Integrar frontend con API",
+    date: "2024-08-20",
+    description: "Conectar el frontend con la API para obtener y enviar datos.",
+    completed: false,
+    reference: "REF006"
+  },
+  {
+    id: 7,
+    title: "Realizar pruebas unitarias",
+    date: "2024-08-25",
+    description: "Ejecutar pruebas unitarias para asegurar el correcto funcionamiento del proyecto.",
+    completed: false,
+    reference: "REF007"
+  },
+  {
+    id: 8,
+    title: "Preparar documentación",
+    date: "2024-09-01",
+    description: "Escribir y organizar la documentación del proyecto.",
+    completed: false,
+    reference: "REF008"
+  },
+  {
+    id: 9,
+    title: "Desplegar el proyecto",
+    date: "2024-09-05",
+    description: "Desplegar el proyecto en un entorno de producción.",
+    completed: false,
+    reference: "REF009"
+  }
+];
+
+export default tasks;
